@@ -1,0 +1,13 @@
+table,
+th {
+  border: 1px solid black;
+}
+
+th {
+  height: 50px;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+}
