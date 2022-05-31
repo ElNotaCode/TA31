@@ -1,6 +1,5 @@
-var dateWithouthSecond = new Date();
-
 function getHora() {
+  let dateWithouthSecond = new Date();
   dateWithouthSecond.toLocaleTimeString(navigator.language, {
     hour: "2-digit",
     minute: "2-digit",
@@ -8,4 +7,6 @@ function getHora() {
   document.getElementById("reloj").innerText = dateWithouthSecond;
 }
 
-getHora();
+window.setInterval(function () {
+  getHora();
+});
